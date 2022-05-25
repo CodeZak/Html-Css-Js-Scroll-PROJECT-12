@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.About_us, .Our_services, .Featured_tours,.button {
+    text-transform: uppercase;
+}
+
+header {    
+    background : red url(images/hero-bcg.jpeg);
+    background-size: cover;
+    background-color: rgb(190, 110, 110);
+    height: 1000px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+
+}
+
+header::before {    
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: linear-gradient(rgb(17, 125, 120), rgb(0, 0, 0));
+    content: ' ';
+    z-index: -2;
+    opacity: 0.6;
+}
+
+
+
+
+.box {
+    z-index:5 ;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.logo img {
+    width: 100px;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.nav li a{
+    text-decoration: none;
+    padding-left: 25px;
+    font-size: 1.3em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 330px;
+    height: 230px;
+    width: 35%;
+}
+
+
+.big_title {
+    font-size: 3.5em;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.desc {
+    font-size: 1em;
+    color: white;
+
+}
+
+.button {
+    margin-top: 30px;
+    transition: 0.3s;
+    padding: 6px 15px;
+    border: 2px solid white;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.button:hover {
+    cursor: pointer;
+background-color: white;
+color: rgb(49, 144, 179);
+}
+
+.About_us , .Featured_tours {
+    height: 600px;
+    background-color: rgb(236, 235, 234);
+}
+
+.Our_services {
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.About_us h1, .Featured_tours h1,.Our_services h1 {
+    font-size: 2.4em;
+    text-align: center;
+    color: rgb(34, 34, 34)}
+
+
+.About_us h1 span, .Featured_tours h1 span,.Our_services h1 span {
+    color:rgb(34, 161, 170);
+    letter-spacing: 2px;
+}
+
+footer {
+    height: 170px;
+    background-color: rgb(1, 67, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
