@@ -1,74 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
 
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-.About_us, .Our_services, .Featured_tours,.button {
+.About_us,
+.Our_services,
+.Featured_tours,
+.button {
     text-transform: uppercase;
 }
 
-header {    
-    background : red url(images/hero-bcg.jpeg);
+header {
+    background: url(images/hero-bcg.jpeg);
     background-size: cover;
     background-color: rgb(190, 110, 110);
-    height: 1000px;
+    height: 110vh;
+    min-height: 400px;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
-
 }
 
-header::before {    
+header::before {
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-image: linear-gradient(rgb(17, 125, 120), rgb(0, 0, 0));
-    content: ' ';
+    content: " ";
     z-index: -2;
     opacity: 0.6;
 }
 
-
-
-
 .box {
-    z-index:5 ;
-    height: 1000px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+}
+.container {
+    position: relative;
 }
 
 .top {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-}
-.logo img {
-    width: 100px;
-}
-.nav ul {
-    display: flex;
-    list-style: none;
-}
-
-
-.nav li a{
-    text-decoration: none;
-    padding-left: 25px;
-    font-size: 1.3em;
-    color: white;
-    font-weight: 500;
-    letter-spacing: 2px;
 }
 
 .center {
@@ -76,24 +61,60 @@ header::before {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 330px;
-    height: 230px;
-    width: 35%;
+    margin: auto;
+    max-width: 450px;
+    min-height: 230px;
 }
 
+.buffer {
+    background-color: green;
+    height: 50px;
+    width: 100%;
+}
+
+.fixed_nav {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(181, 180, 180);
+    position: fixed;
+    top: 0;
+}
+
+.fixed_nav .nav li a {
+    color: black;
+    transition: 0.2s;
+}
+
+.fixed_nav .nav li a:hover {
+    color: rgb(17, 125, 120);
+}
+
+.logo img {
+    width: 80px;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    padding-left: 35px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
 
 .big_title {
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 600;
     color: white;
     letter-spacing: 2px;
-
 }
 
 .desc {
     font-size: 1em;
     color: white;
-
 }
 
 .button {
@@ -103,39 +124,42 @@ header::before {
     border: 2px solid white;
     color: white;
     letter-spacing: 2px;
-
 }
 
 .button:hover {
     cursor: pointer;
-background-color: white;
-color: rgb(49, 144, 179);
+    background-color: white;
+    color: rgb(49, 144, 179);
 }
 
-.About_us , .Featured_tours {
-    height: 600px;
+.About_us,
+.Featured_tours {
+    height: 90vh;
     background-color: rgb(236, 235, 234);
 }
 
 .Our_services {
-    height: 600px;
+    height: 90vh;
     background-color: rgb(255, 255, 255);
 }
 
-
-.About_us h1, .Featured_tours h1,.Our_services h1 {
+.About_us h1,
+.Featured_tours h1,
+.Our_services h1 {
     font-size: 2.4em;
     text-align: center;
-    color: rgb(34, 34, 34)}
+    color: rgb(34, 34, 34);
+}
 
-
-.About_us h1 span, .Featured_tours h1 span,.Our_services h1 span {
-    color:rgb(34, 161, 170);
+.About_us h1 span,
+.Featured_tours h1 span,
+.Our_services h1 span {
+    color: rgb(34, 161, 170);
     letter-spacing: 2px;
 }
 
 footer {
-    height: 170px;
+    height: 20vh;
     background-color: rgb(1, 67, 85);
     display: flex;
     justify-content: center;
@@ -146,4 +170,116 @@ footer p {
     color: white;
     font-size: 1.2em;
     text-align: center;
+}
+.more {
+    display: none;
+}
+
+
+.scrollUp  {
+
+}
+
+
+.scrollUp i {
+  color: rgb(49, 144, 179);
+  font-size: 2em;
+  font-weight: bold;
+  position: fixed;
+  bottom: 70px;
+  right: 40px;
+  z-index: 55;
+  animation-name: scrollBtn ;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  display: none;
+}
+
+@keyframes  scrollBtn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.scrollUp i:hover {
+  cursor: pointer;
+}
+
+
+
+
+@media (min-width: 795px) {
+
+  .nav {
+    height: auto !important;
+  }
+  
+}
+
+
+@media screen and (max-width: 795px) {
+  
+    .top {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        background-color: rgb(255, 255, 255);
+        justify-content: space-between;
+        padding: 0px;
+        gap: 0px 0px;
+    }
+    .nav {
+        grid-column: span 2;
+        order: 3;
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .nav ul {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .nav ul li {
+      transition: 0.3s;
+    }
+
+    .nav ul li:hover {
+        background-color: aliceblue;
+        cursor: pointer;
+        text-indent: 10px;
+    }
+
+    .nav ul li a {
+        color: rgb(10, 51, 117);
+        padding: 12px;
+        margin: 0px;
+        display: block;
+        height: 100%;
+    }
+
+
+    .more {
+        margin-right: 15px;
+        display: block;
+        font-size: 1.9em;
+        transition: 0.3s;
+    }
+    .more:hover {
+        color: rgb(17, 125, 120);
+        cursor: pointer;
+    }
 }
